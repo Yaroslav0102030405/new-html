@@ -1,0 +1,26 @@
+.grid {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  display: flex;
+  gap: 50px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.flex-item:nth-child(2n) {
+  /* background-color: orange; */
+  flex-direction: row-reverse;
+}
