@@ -1,4 +1,8 @@
 :root {
+  --basic-system-font: "Montserrat", -apple-system, BlinkMacSystemFont,
+    avenir next, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
+    noto, arial, sans-serif;
+
   --title-color: #000000;
   --subtitle-color: #a0785a;
   --text-color: #355e3b;
@@ -7,15 +11,46 @@
 }
 
 body {
+  /* если не будет шрифта Montserrat тогда будет взят первый шрифт найденный в системе */
+  font-family: var(--basic-system-font);
+
   background-color: var(--subtitle-color);
+  color: var(--title-color);
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+
+  letter-spacing: -0.015em;
+
+  /* главный размер шрифта - это абзац */
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+button {
+  font-family: inherit;
 }
 
 .link {
   color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .current {
