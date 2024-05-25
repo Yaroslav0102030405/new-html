@@ -1,3 +1,27 @@
+:root {
+  --title-color: #000000;
+  --subtitle-color: #a0785a;
+  --text-color: #355e3b;
+  --accent-color: #ff0000;
+  --bg-color-section: #dfe2ec;
+}
+
+body {
+  background-color: var(--subtitle-color);
+}
+
+.link {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.current {
+  color: aqua;
+}
+
 .grid {
   display: flex;
   gap: 50px;
