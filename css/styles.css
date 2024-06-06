@@ -50,6 +50,11 @@ body {
   margin: 0 auto;
 }
 
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
 .red {
   background-color: #ff0000;
 }
