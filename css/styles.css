@@ -1,3 +1,17 @@
+/* block model css */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+**::after {
+  box-sizing: inherit;
+}
+
+/* чтобы padding работали на строчных элементах то нужно им задать display: inline-block */
+
+/* variables */
 :root {
   --basic-system-font: "Montserrat", -apple-system, BlinkMacSystemFont,
     avenir next, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
@@ -27,6 +41,11 @@ body {
   /* главный размер шрифта - это абзац */
   font-size: 18px;
   line-height: 1.67;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .red {
