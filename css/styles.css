@@ -175,9 +175,54 @@ a {
   flex-direction: row-reverse;
 }
 
-.hero {
-  padding-top: 80px;
-  padding-bottom: 80px;
+/* .hero {
+
   text-align: center;
-  /* background-color: #ff0000; */
+  padding-top: 250px;
+} */
+
+.center {
+  /* сделать по центру */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  /* background-image: linear-gradient(
+      90deg,
+      rgba(165, 19, 209, 0.7) 35%,
+      rgba(93, 0, 255, 0) 100%
+    ),
+    url("../image/Img.jpg"); */
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../image/Img.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* если картинка не придет тогда загрузиться серый фон */
+  background-color: #2f303a66;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
