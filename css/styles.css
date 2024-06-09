@@ -181,13 +181,18 @@ a {
   padding-top: 250px;
 } */
 
+.hero {
+  position: relative;
+}
+
 .center {
   /* сделать по центру */
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
+  /* margin-right: -50%; */
   transform: translate(-50%, -50%);
+  display: flex;
 }
 
 .overlay {
