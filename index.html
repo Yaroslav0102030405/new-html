@@ -229,6 +229,36 @@
 
         <p>&copy; Photo <span style="color: red">eewewewew</span>dsdsdsdsds</p>
       </div>
+
+      <button type="button" class="btn-open">Открыть</button>
+      <div class="backdrop hidden">
+        <div class="modal">
+          <button class="btn-close" type="button">Закрыть</button>
+        </div>
+      </div>
     </footer>
+
+    <script>
+      const backdrop = document.querySelector(".backdrop");
+      const btnOpen = document.querySelector(".btn-open");
+      const btnClose = document.querySelector(".btn-close");
+      btnOpen.addEventListener("click", isOpenModal);
+      btnClose.addEventListener("click", isCloseModal);
+      backdrop.addEventListener("click", isCloseModalbackdrop);
+
+      function isOpenModal() {
+        backdrop.classList.toggle("hidden");
+      }
+
+      function isCloseModal() {
+        backdrop.classList.toggle("hidden");
+      }
+
+      function isCloseModalbackdrop(e) {
+        if (e.currentTarget === e.target) {
+          backdrop.classList.toggle("hidden");
+        }
+      }
+    </script>
   </body>
 </html>
